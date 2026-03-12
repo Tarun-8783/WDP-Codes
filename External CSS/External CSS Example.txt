@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>External CSS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>External CSS Example</h1>
+<p>This paragraph is styled using an external CSS file.</p>
+
+</body>
+</html>
+
+CSS Box Model Example 1
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+.box{
+    width:200px;
+    padding:20px;
+    border:5px solid black;
+    margin:30px;
+    background-color:lightblue;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+This is the CSS Box Model example
+</div>
+
+</body>
+</html>

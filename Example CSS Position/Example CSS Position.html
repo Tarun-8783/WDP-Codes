@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Position Example</title>
+<!-- filename: CSSPosition.html -->
+
+<style>
+
+/* Basic Styling */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Static Position (Default) */
+.static-box{
+    position: static;
+    background: #29A7D9;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Relative Position */
+.relative-box{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: #027333;
+    padding: 10px;
+    color: white;
+}
+
+/* Absolute Position */
+.absolute-box{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: #F2E527;
+    padding: 10px;
+    color: black;
+}
+
+/* Fixed Position */
+.fixed-box{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #0A5DA6;
+    padding: 10px;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+
+/* Sticky Position */
+.sticky-box{
+    position: sticky;
+    top: 0;
+    background: #222059;
+    padding: 10px;
+    color: white;
+}
+
+/* To demonstrate sticky effect */
+.content{
+    height: 150vh;
+    padding: 20px;
+    background: #ddd;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="static-box">
+Static Position (Default)
+</div>
+
+<div class="relative-box">
+Relative Position (Moves relative to itself)
+</div>
+
+<div class="sticky-box">
+Sticky Position (Stays visible when scrolling)
+</div>
+
+<div class="content">
+Scroll down to see the sticky header effect.
+
+<div class="absolute-box">
+Absolute Position (Moves relative to nearest positioned ancestor)
+</div>
+
+</div>
+
+</div>
+
+<div class="fixed-box">
+Fixed Position (Always visible)
+</div>
+
+</body>
+</html>
+
+Example CSS Responsive Layout
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Web Design</title>
+<!-- filename: CSSResponsive.html -->
+
+<style>
+
+/* Root Variables for Colors */
+:root{
+--dark-blue:#222059;
+--medium-blue:#0A5DA6;
+--light-blue:#29A7D9;
+--white:#FFFFFF;
+--green:#027333;
+}
+
+/* Global Styles */
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background: var(--white);
+color: var(--dark-blue);
+}
+
+/* Header */
+header{
+background: var(--medium-blue);
+color: var(--white);
+text-align:center;
+padding:20px;
+font-size:24px;
+}
+
+/* Navigation */
+nav{
+display:flex;
+justify-content:center;
+background: var(--light-blue);
+padding:10px;
+}
+
+nav a{
+color: var(--white);
+text-decoration:none;
+margin:0 15px;
+font-size:18px;
+}
+
+/* Main Layout */
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+padding:20px;
+}
+
+.box{
+background: var(--green);
+color: var(--white);
+padding:20px;
+margin:10px;
+width:30%;
+text-align:center;
+border-radius:8px;
+}
+
+/* Responsive Navigation for Mobile */
+@media (max-width:768px){
+
+nav{
+flex-direction:column;
+text-align:center;
+}
+
+nav a{
+margin:10px 0;
+}
+
+/* Responsive Grid */
+.box{
+width:100%;
+}
+
+}
+
+/* Footer */
+footer{
+background: var(--dark-blue);
+color: var(--white);
+text-align:center;
+padding:10px;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>Responsive Web Design</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="container">
+<div class="box">Feature 1</div>
+<div class="box">Feature 2</div>
+<div class="box">Feature 3</div>
+</div>
+
+<footer>© 2024 Responsive Design Example</footer>
+
+</body>
+</html>
